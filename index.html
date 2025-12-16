@@ -1,1 +1,183 @@
-Website under construction
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mero Aawas | Construction Company</title>
+
+  <!-- Your main CSS file -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Font Awesome (for social media icons) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="logo">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo.png" alt="Mero Aawas Logo">
+      </a>
+    </div>
+
+    <nav class="nav">
+      <ul class="menu">
+        <li><a href="#"><b>Home</b></a></li>
+
+        <li class="dropdown">
+          <a href="#"><b>About</b> <span class="arrow">⌄</span></a>
+          <ul class="submenu">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Team</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#">Services <span class="arrow">⌄</span></a>
+          <ul class="submenu">
+            <li><a href="#">Residential</a></li>
+            <li><a href="#">Commercial</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#">Projects <span class="arrow">⌄</span></a>
+          <ul class="submenu">
+            <li><a href="#">Completed</a></li>
+            <li><a href="#">Ongoing</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero video-hero">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="videos/hero-video.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-content">
+      <h2>Building Homes You Can Trust</h2>
+      <p>Residential & Commercial Construction Services</p>
+      <a href="#contact" class="btn">Get a Quote</a>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">Residential Construction</div>
+      <div class="card">Commercial Construction</div>
+      <div class="card">Renovation & Interior Work</div>
+      <div class="card">Building Maintenance</div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="section">
+    <h2>Our Projects</h2>
+    <div class="projects">
+      <img src="images/project1.jpg" alt="Residential Project">
+      <img src="images/project2.jpg" alt="Commercial Project">
+      <img src="images/project3.jpg" alt="Apartment Project">
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="section">
+    <h2>Mero Aawas Design And Builders Pvt. Ltd.</h2>
+    <p>
+      <b>Mero Aawas Design And Builders Pvt. Ltd.</b>is a newly established 
+      and fast-growing construction and design company in Nepal, founded 
+      in <b>2025</b> with the vision of delivering modern, reliable, and cost-effective 
+      building solutions.
+    </p>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p><strong>Phone:</strong> +977 9843906513</p>
+    <p><strong>Email:</strong> design.meroaawas@gmail.com</p>
+    <p><strong>Address:</strong> Godawari-13, Lalitpur</p>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Column 1 -->
+      <div class="footer-col footer-about">
+        <img src="images/logo.png" alt="Mero Aawas Logo" class="footer-logo">
+        <p>
+          We build extraordinary projects with precision and trust.
+          Our focus is on quality construction and long-term value.
+        </p>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">Our Journey</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#">Homes</a></li>
+          <li><a href="#">Infrastructure</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="footer-col">
+        <h4>Our Services</h4>
+        <ul>
+          <li>Construction Services</li>
+          <li>Designing Services</li>
+          <li>Project Reporting</li>
+          <li>Business Consultation</li>
+          <li>Financial Consultation</li>
+          <li>Additional Services</li>
+        </ul>
+      </div>
+
+      <!-- Column 4 -->
+      <div class="footer-col">
+        <h4>Contact Details</h4>
+        <p>Godawari-13, Lalitpur, Nepal</p>
+        <p>design.meroaawas@gmail.com</p>
+        <p>+977 9843906513</p>
+
+        <div class="social-icons">
+  <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+  <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+  <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+  <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+</div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Mero Aawas Design And Builders Pvt. Ltd. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ================= SCROLL SCRIPT ================= -->
+  <script>
+    const header = document.querySelector(".header");
+    window.addEventListener("scroll", () => {
+      header.classList.toggle("scrolled", window.scrollY > 50);
+    });
+  </script>
+
+</body>
+</html>
